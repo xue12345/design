@@ -26,6 +26,7 @@ public class God {
     public static  God getGod(){
         return god;
     }
+
     /***************************懒汉模式(只有用的时候才会创建)**********************************/
 
      /**这里不进行实例化*/
@@ -34,7 +35,7 @@ public class God {
     public static God getInstance() {
         //判断神是否存在
         if(null == lazyGod){
-            //需要排毒进入
+            //需要排队进入
             synchronized (God.class){
                 //如果不存在，则创建
                 if(null == lazyGod){

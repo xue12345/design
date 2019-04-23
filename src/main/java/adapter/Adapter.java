@@ -7,7 +7,7 @@ package adapter;
  * @version 1.0
  * @createDate 2019/4/2
  * @功能： 由于墙上的接口是三插标准，电视实现的是两插标准，无法通电（对象适配）
- *          创建一个视频器解决矛盾
+ *          创建一个适配器解决矛盾
  * @since JDK1.8
  */
 public class Adapter implements TriplePin {
